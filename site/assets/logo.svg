@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Project Dock</title>
+  <desc id="desc">Three graphite project cards held in a dock on a silver rounded tile.</desc>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.75" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#F2F3F5"/>
+      <stop offset="1" stop-color="#CED3DA"/>
+    </linearGradient>
+    <linearGradient id="graphite" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#454D59"/>
+      <stop offset="1" stop-color="#252B35"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#silver)" stroke="#C4CAD2" stroke-width="1"/>
+  <rect x="3" y="3" width="58" height="58" rx="14" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <rect x="25" y="12" width="24" height="28" rx="5" fill="#A4ADB9"/>
+  <rect x="20" y="17" width="24" height="28" rx="5" fill="#6C7685"/>
+  <rect x="15" y="22" width="24" height="23" rx="5" fill="url(#graphite)"/>
+  <path d="M10 35 H16 V44 Q16 48 20 48 H44 Q48 48 48 44 V35 H54 V45 Q54 54 45 54 H19 Q10 54 10 45 Z" fill="url(#graphite)"/>
+</svg>

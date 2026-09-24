@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <title>项目坞 Project Dock — 让每个项目，都有清晰的下一步</title>
+  <meta name="description" content="项目坞是一款轻量的 Windows 桌面项目管理工具。用封面整理项目，用迭代拆解工作，用季度甘特图看清排期。项目保存在本机，无需注册账户。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="项目坞 Project Dock — 给你的项目，一个清晰的工作区">
+  <meta property="og:description" content="整理项目、拆解迭代、看清排期。下载项目坞，让每个项目都有清晰的下一步。">
+  <meta property="og:image" content="https://wyyyyuu.github.io/project-dock-releases/assets/schedule.png">
+  <meta property="og:url" content="https://wyyyyuu.github.io/project-dock-releases/">
+  <link rel="canonical" href="https://wyyyyuu.github.io/project-dock-releases/">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"项目坞 Project Dock","applicationCategory":"ProductivityApplication","operatingSystem":"Windows 10, Windows 11","softwareVersion":"{{VERSION}}","downloadUrl":"{{WINDOWS_URL}}","url":"https://wyyyyuu.github.io/project-dock-releases/"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24"><path d="M3 4.5 10.5 3.5v8H3zm10-1.3 8-1.2v9.5h-8zM3 13.5h7.5v8L3 20.5zm10 0h8V23l-8-1.2z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18m-13 5h3m2 3h3"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zm-4 9 3 3 5-6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M5 17h14l-2-4V9a5 5 0 0 0-10 0v4zm5 3h4"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m6 0h6v-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#" aria-label="项目坞首页"><img src="assets/logo.svg" alt="" width="36" height="36"><span>项目坞 <span class="brand-en">Project Dock</span></span></a>
+      <nav aria-label="主导航"><a href="#features">功能</a><a href="#faq">常见问题</a><a class="nav-download" href="#download">下载应用 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <a class="release-link" href="{{RELEASE_URL}}"><span class="status-dot"></span>v{{VERSION}} 已发布<span class="release-separator" aria-hidden="true">/</span>新的季度排期体验 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <h1 id="hero-title">让每个项目，<br><span>都有清晰的下一步。</span></h1>
+        <p class="hero-description">从灵感到上线，把项目、迭代与排期<br class="desktop-break">放进一个清爽的桌面工作区。</p>
+        <div class="hero-actions"><a class="button button-primary" href="{{WINDOWS_URL}}" data-download="windows"><svg class="icon" aria-hidden="true"><use href="#i-windows"/></svg>下载 Windows 版<svg class="icon download-arrow" aria-hidden="true"><use href="#i-download"/></svg></a><a class="button button-text" href="#tour">看看它如何工作 <span aria-hidden="true">↓</span></a></div>
+        <p class="hero-note">Windows 10 / 11 <span aria-hidden="true">·</span> 无需注册账户 <span aria-hidden="true">·</span> <a href="#mac-download">Mac 版状态</a></p>
+      </div>
+
+      <div class="product-stage container" id="tour">
+        <div class="preview-toolbar">
+          <div class="preview-tabs" role="tablist" aria-label="查看产品界面">
+            <button role="tab" id="tab-schedule" aria-controls="product-panel" aria-selected="true" data-view="schedule"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>项目排期</button>
+            <button role="tab" id="tab-gallery" aria-controls="product-panel" aria-selected="false" tabindex="-1" data-view="gallery"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg>项目画廊</button>
+          </div>
+          <span class="preview-label"><span></span>真实应用界面 · 演示数据</span>
+        </div>
+        <div class="app-frame" id="product-panel" role="tabpanel" aria-labelledby="tab-schedule" tabindex="0">
+          <img id="product-image" src="assets/schedule.png" alt="项目坞季度甘特图：项目、迭代和阶段分层排列，阶段时间条外展示起止日期。图中为演示数据。" width="1546" height="1017" fetchpriority="high">
+          <button class="zoom-button" id="zoom-preview" hidden aria-label="放大查看产品界面"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg><span>查看大图</span></button>
+        </div>
+        <div class="preview-caption"><span id="preview-caption">展开一个迭代，就能看清每个阶段的起点与终点。</span><span class="caption-index" aria-hidden="true">01 / 02</span></div>
+      </div>
+      <div class="essentials container" aria-label="产品特点"><span><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg>项目各归其位</span><span><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>排期一眼看清</span><span><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>数据留在本机</span></div>
+    </section>
+
+    <section class="features container section-space" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">少一点切换，多一点专注</p><h2 id="features-title">从“正在做什么”，<br>到“接下来做什么”。</h2><p>几个并行的项目，也可以有条不紊。<br>把分散的信息整理好，再把精力留给创造。</p></div>
+      <div class="feature-layout">
+        <article class="feature-main">
+          <div class="feature-number">01 / 整理项目</div><h3>给每个想法，一个位置。</h3><p>用封面辨认项目，用文件夹整理工作。网站、代码仓库和部署入口集中在一起，需要时随手打开。</p>
+          <div class="mini-gallery" aria-label="项目封面整理示意">
+            <div class="mini-project"><div class="mini-cover cover-one"><span class="cover-orbit"></span><span>STUDIO<br><b>NOTES.</b></span></div><div class="mini-project-label"><strong>内容工作室</strong><span><i></i>进行中</span></div></div>
+            <div class="mini-project"><div class="mini-cover cover-two"><span class="cover-window"></span><span>THE NEXT<br><b>CHAPTER</b></span></div><div class="mini-project-label"><strong>官网改版</strong><span><i></i>进行中</span></div></div>
+            <div class="mini-project"><div class="mini-cover cover-three"><img src="assets/logo.svg" alt="" width="54" height="54"><span>PROJECT DOCK</span></div><div class="mini-project-label"><strong>我的小工具</strong><span class="done"><i></i>已上线</span></div></div>
+          </div>
+          <span class="illustration-note">项目整理示意</span>
+        </article>
+        <div class="feature-side">
+          <article class="feature-detail"><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div><div><div class="feature-number">02 / 拆解迭代</div><h3>大计划，从下一小步开始。</h3><p>一个项目同时管理多个迭代。复用流程模板，独立跟进需求、设计、开发与发布，进度随阶段完成自动计算。</p><div class="phase-example" aria-label="示意：需求完成，设计完成，开发进行中，发布待开始"><span class="complete">需求</span><span class="complete">设计</span><span class="active">开发</span><span>发布</span></div></div></article>
+          <article class="feature-detail"><div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></div><div><div class="feature-number">03 / 安排时间</div><h3>把时间排清楚，心里就有数。</h3><p>在季度甘特图里查看迭代和阶段，展开细节、切换季度，点击时间条直接编辑日期与提醒。</p><a class="inline-link" href="#tour" data-show-schedule>看一眼季度排期 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiet-section" aria-labelledby="quiet-title"><div class="container quiet-layout"><div><p class="eyebrow">就在你的桌面上</p><h2 id="quiet-title">轻一点的工具，<br>稳稳接住日常。</h2></div><div class="quiet-points"><article><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><div><h3>自己的项目，存在自己的电脑。</h3><p>无需注册。项目、封面与设置保存在本机，支持完整备份与恢复，换电脑也有章可循。</p></div></article><article><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg><div><h3>重要节点，记得提醒你。</h3><p>为开始和截止分别设置提醒。应用运行或留在托盘时检查排期，完成的阶段不再打扰。</p></div></article><article><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><div><h3>更新简单，原来的工作继续。</h3><p>在应用内检查新版本，下载经过签名校验的安装包。升级前自动备份，保留已有项目。</p></div></article></div></div></section>
+
+    <section class="download-section container section-space" id="download" aria-labelledby="download-title">
+      <div class="section-heading centered"><p class="eyebrow">把下一步，放到桌面上</p><h2 id="download-title">你的下一个项目，<br>从这里开始。</h2><p>选择你的系统，下载项目坞。</p></div>
+      <div class="download-grid">
+        <article class="download-card windows"><div class="platform-heading"><div class="platform-icon"><svg class="icon" aria-hidden="true"><use href="#i-windows"/></svg></div><span class="availability"><span class="status-dot"></span>正式版可用</span></div><h3>Windows</h3><p>为你的 Windows 桌面准备就绪。</p><div class="download-spec"><span>v{{VERSION}}</span><span>{{WINDOWS_SIZE}}</span><span>.exe 安装包</span></div><a class="button button-primary full-width" href="{{WINDOWS_URL}}" data-download="windows">下载 Windows 版<svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a><p class="system-requirement">Windows 10 / 11 · .NET Framework 4.8 或更高版本</p><a class="small-link" href="{{CHECKSUM_URL}}">查看文件校验值 <span aria-hidden="true">↗</span></a></article>
+        <article class="download-card mac" id="mac-download"><div class="platform-heading"><div class="platform-icon"><svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="4" width="22" height="17" rx="2"/><path d="M16 21v5m-5 0h10M5 17h22"/></svg></div><span class="availability muted">{{MAC_STATUS}}</span></div><h3>macOS</h3><p>{{MAC_DESCRIPTION}}</p><div class="mac-download-action">{{MAC_ACTION}}</div><p class="system-requirement">{{MAC_REQUIREMENT}}</p><a class="small-link" href="https://github.com/Wyyyyuu/project-dock-releases/releases">关注版本发布 <span aria-hidden="true">↗</span></a></article>
+      </div>
+      <p class="download-footnote">安装包托管于 GitHub Releases。<a href="{{RELEASE_URL}}">查看更新记录</a><span aria-hidden="true"> · </span><a href="https://github.com/Wyyyyuu/project-dock-releases/releases">历史版本</a></p>
+    </section>
+
+    <section class="faq-section container" id="faq" aria-labelledby="faq-title"><div><p class="eyebrow">你可能想知道</p><h2 id="faq-title">开始之前，<br>几个小问题。</h2><a class="inline-link" href="https://github.com/Wyyyyuu/project-dock-releases/issues">反馈问题 <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div><div class="faq-list">
+      <details><summary>需要注册账号或者一直联网吗？<span aria-hidden="true">+</span></summary><p>不需要注册项目坞账号。项目整理、迭代编辑和排期查看都在本机完成。下载更新、打开网站，以及可选的平台数据查询需要联网。</p></details>
+      <details><summary>我的项目数据存在哪里？<span aria-hidden="true">+</span></summary><p>正式版默认保存在 Windows 用户目录下的 AppData 中，与程序文件分开。可在“备份与更新”里导出完整备份。备份包含项目、封面和设置，不包含平台 Token。</p></details>
+      <details><summary>Mac 电脑现在可以用吗？<span aria-hidden="true">+</span></summary><p>{{MAC_FAQ}}</p></details>
+      <details><summary>下载后如何安装和更新？<span aria-hidden="true">+</span></summary><p>打开下载的 .exe 文件，按安装向导完成安装。之后可以在应用内“备份与更新”检查新版本。安装包尚未使用 Windows 商业代码签名证书；如系统提示发布者未验证，请先确认文件来自本页链接的正式发布，并核对校验值。</p></details>
+      <details><summary>关闭软件以后，还会提醒吗？<span aria-hidden="true">+</span></summary><p>关闭窗口并留在托盘运行时会继续检查提醒。完全退出、关机或未启动应用时无法提醒；下次启动会补充未发送的提醒。可在设置中关闭后台运行。</p></details>
+    </div></section>
+  </main>
+  <footer class="site-footer container"><a class="brand" href="#"><img src="assets/logo.svg" width="30" height="30" alt=""><span>项目坞 <span class="brand-en">Project Dock</span></span></a><p>让好想法，一步一步成为作品。</p><div><a href="{{RELEASE_URL}}">发布记录</a><a href="https://github.com/Wyyyyuu/project-dock-releases">GitHub <span aria-hidden="true">↗</span></a></div></footer>
+  <dialog id="preview-dialog" aria-label="产品界面大图"><span class="dialog-hint">左右滑动，查看界面细节</span><form method="dialog"><button class="dialog-close" aria-label="关闭大图">关闭 <span aria-hidden="true">×</span></button></form><div class="dialog-viewport"><img id="dialog-image" src="assets/schedule.png" alt="" width="1546" height="1017"></div></dialog>
+</body>
+</html>
